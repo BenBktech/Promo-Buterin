@@ -4,7 +4,7 @@ pragma solidity 0.8.13;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract epargne is Ownable {
+contract Devinez is Ownable {
     string private mot;
 
     string public indice;
@@ -60,7 +60,7 @@ contract epargne is Ownable {
 
         address tempPlayers;
 
-        for (uint i = tailleTableau - 1; i > 0; i--) {
+        for (uint i = tailleTableau - 1; i >= 0; i--) {
             tempPlayers = players[i];
 
             played[tempPlayers] = false;
