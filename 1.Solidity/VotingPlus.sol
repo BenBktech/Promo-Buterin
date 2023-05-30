@@ -144,7 +144,7 @@ contract Voting is Ownable {
 
         for (uint h=0; h< proposalsArray.length; h++) {
             if (proposalsArray[h].voteCount == highestCount) {
-                winners[temp];
+                winners[temp] = h;
                 temp++;
             }
         }
